@@ -3,7 +3,8 @@ import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '
 import Button from '../button/button.component';
 
 import FormInput from '../form-input/form-input.component';
-import './sign-up-form.styles.scss';
+import './sign-up-form.styles.jsx';
+import { SignUpContainer, H2 } from './sign-up-form.styles.jsx';
 
 const defaultFormFields = {
     displayName: '',
@@ -51,8 +52,8 @@ const SignUpForm = () => {
     };
 
     return (
-        <div className="sign-up-container">
-            <h2>Don´t have an account?</h2>
+        <SignUpContainer>
+            <h2><H2>Don´t have an account?</H2></h2>
             <h1>
                 Sign in with Email and Password
             </h1>
@@ -66,7 +67,7 @@ const SignUpForm = () => {
                 <FormInput label="Confirm Password" type="password" required onChange={handleChange} name="confirmPassword" value={confirmPassword}/>
                 <Button type="submit">Sign Up</Button>
             </form>
-        </div>
+        </SignUpContainer>
     );
 };
 
