@@ -9,7 +9,7 @@ import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component
 import { UserContext } from '../../contexts/user.context';
 import { CartContext } from '../../contexts/cart.context';
 
-import { SignOutUser } from '../utils/firebase/firebase.utils';
+import { signOutUser } from '../utils/firebase/firebase.utils';
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
@@ -29,7 +29,7 @@ const Navigation = () => {
             {
 
               currentUser ? (
-                <NavLink as='span' onClick={SignOutUser}>
+                <NavLink as='span' onClick={signOutUser}>
                   SIGN OUT
                   </NavLink>
                   ):(
