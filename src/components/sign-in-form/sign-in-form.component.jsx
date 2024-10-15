@@ -1,10 +1,10 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
 
 import FormInput from '../form-input/form-input.component.jsx';
 import {H2, ButtonContainer, SignInContainer} from'./sign-in-form.styles';
-import { createUserDocumentFromAuth, signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../routes/utils/firebase/firebase.utils';
+import { signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../routes/utils/firebase/firebase.utils';
 
 
 const defaultFormFields = {
