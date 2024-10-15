@@ -1,7 +1,7 @@
 import Button from '../button/button.component';
 import {CartDropdownContainer, EmptyMessage, CartItems} from './cart-dropdown.styles';
 import { CartContext } from '../../contexts/cart.context';
-import CartItem from '../cart-item/cart-item.compnent';
+import CartItem from '../cart-item/cart-item.component';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
